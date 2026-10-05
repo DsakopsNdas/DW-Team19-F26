@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class ButtonRoomChange : MonoBehaviour
 {
-    public GameObject eventSystem;
     public RoomChanger roomChanger;
-
 
     public void Start()
     {
-        eventSystem = GameObject.FindWithTag("Event System");
-        roomChanger = eventSystem.GetComponent<RoomChanger>();
+        roomChanger = GetComponentInParent<RoomChanger>();
     }
 
     public void leftRoomChange()

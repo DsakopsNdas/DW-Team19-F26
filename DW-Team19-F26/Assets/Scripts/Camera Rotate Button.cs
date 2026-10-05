@@ -1,32 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class CameraRotateButton : MonoBehaviour
 {
-    public Button button;
+    //Containers for left and right buttons and camera
+    public Button leftButton;
+    public Button rightButton;
     public GameObject mainCamera;
-    public bool rotatesLeft;
-    public bool rotatesRight;
+
+    //Camera turn speed modifier
+    public float cameraDampening = 5f;
+
+    public Vector3 leftRotate = new Vector3(0, -90, 0);
+    public Vector3 rightRotate = new Vector3(0, 90, 0);
+    public Quaternion leftTurn;
+    public Quaternion rightTurn;
 
     private void Start()
     {
-        button = GetComponent<Button>();
+        //Automatically grabs Camera, less manual work
         mainCamera = GameObject.FindWithTag("MainCamera");
-        button.onClick.AddListener(OnClick);
+        
+        leftTurn = Quaternion.Euler(leftRotate);
+        rightTurn = Quaternion.Euler(rightRotate);
     }
 
-    public void OnClick()
+    private void Update()
     {
-        if (rotatesLeft)
-        {
-            mainCamera.transform.Rotate(0, -90, 0, Space.World);
-        }
-
-        if (rotatesRight)
-        {
-            mainCamera.transform.Rotate(0, 90, 0, Space.World);
-        }
+        
     }
 }

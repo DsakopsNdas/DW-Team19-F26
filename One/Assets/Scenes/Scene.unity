@@ -267,6 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed05eb7dad969942b7dda07e44432e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
 --- !u!1 &331282329
 GameObject:
@@ -1191,6 +1192,7 @@ MonoBehaviour:
   parentRoom: {fileID: 804908197}
   targetPuzzle: {fileID: 600155104}
   navButtonsOnAtTargetScene: 1
+  eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
 --- !u!1 &970659982
 GameObject:
@@ -2152,6 +2154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed05eb7dad969942b7dda07e44432e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
 --- !u!1 &1962432473
 GameObject:
@@ -2554,8 +2557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 125, y: -250}
-  m_SizeDelta: {x: 250, y: 250}
+  m_AnchoredPosition: {x: 175, y: -250}
+  m_SizeDelta: {x: 350, y: 250}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2009133952
 MonoBehaviour:
@@ -2572,6 +2575,7 @@ MonoBehaviour:
   parentRoom: {fileID: 600155104}
   targetPuzzle: {fileID: 804908197}
   navButtonsOnAtTargetScene: 0
+  eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
 --- !u!114 &2009133953
 MonoBehaviour:

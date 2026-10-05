@@ -9,29 +9,35 @@ public class RoomChanger : MonoBehaviour
     public GameObject southRoom;
     public GameObject westRoom;
 
-    public void activateNorth()
+    public string direction = "north";
+
+    public void ActivateNorth()
     {
+        direction = "north";
         northRoom.SetActive(true);
         eastRoom.SetActive(false);
         southRoom.SetActive(false);
         westRoom.SetActive(false);
     }
-    public void activateEast()
+    public void ActivateEast()
     {
+        direction = "east";
         northRoom.SetActive(false);
         eastRoom.SetActive(true);
         southRoom.SetActive(false);
         westRoom.SetActive(false);
     }
-    public void activateSouth()
+    public void ActivateSouth()
     {
+        direction = "south";
         northRoom.SetActive(false);
         eastRoom.SetActive(false);
         southRoom.SetActive(true);
         westRoom.SetActive(false);
     }
-    public void activateWest()
+    public void ActivateWest()
     {
+        direction = "west";
         northRoom.SetActive(false);
         eastRoom.SetActive(false);
         southRoom.SetActive(false);

@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Text box Mockup_0
+      name: TextBox
       rect:
         serializedVersion: 2
         x: 108
@@ -105,7 +105,7 @@ TextureImporter:
         width: 123
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 36, y: 41, z: 36, w: 41}
       outline: []
       physicsShape: []
@@ -113,6 +113,216 @@ TextureImporter:
       bones: []
       spriteID: 46f67e959d988b246975fbb2f67c682b
       internalID: 2029932700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitButtonClicked
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 401
+        width: 256
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5a3a2d38dc8f547b7b2901169cdef2
+      internalID: 1454442098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ExitNeutul
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 314
+        width: 253
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1384943132034ab45a403f5f624d5231
+      internalID: -60126431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartButtonSelected
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 202
+        width: 311
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e695fd6c1e28d43841ebecfe2617dd
+      internalID: 1155485089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StartButtonNeutral
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 94
+        width: 317
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41d8cb2816b7934c91b925b61b03482
+      internalID: -501039084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftArrowPressed
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 408
+        width: 144
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91559275587a7ad4f9379faea0f34fbf
+      internalID: -357865767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftArrowHover
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 262
+        width: 146
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d61d236136c597b4ebd32c5580d846e1
+      internalID: -1964431068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftArrowNeutral
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 97
+        width: 149
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e276b7cf95fc004449d367cb0a86bbdd
+      internalID: -937324853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RightArrowNeutral
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 84
+        width: 146
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d8c0f8c41e1984f91a54c49268b4db
+      internalID: 1547957244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RightArrowHover
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 252
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605e049145c406f44917c5ed584223e7
+      internalID: -814708085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RightArrowClicked
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 397
+        width: 148
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d033fd33467ca64aa635fdc8a4b292f
+      internalID: 774147547
       vertices: []
       indices: 
       edges: []
@@ -128,7 +338,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Text box Mockup_0: 2029932700
+      ExitButtonClicked: 1454442098
+      ExitNeutul: -60126431
+      LeftArrowHover: -1964431068
+      LeftArrowNeutral: -937324853
+      LeftArrowPressed: -357865767
+      RightArrowClicked: 774147547
+      RightArrowHover: -814708085
+      RightArrowNeutral: 1547957244
+      StartButtonNeutral: -501039084
+      StartButtonSelected: 1155485089
+      TextBox: 2029932700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

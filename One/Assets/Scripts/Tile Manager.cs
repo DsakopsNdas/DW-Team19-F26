@@ -15,6 +15,8 @@ public class TileManager : MonoBehaviour
 
     [SerializeField] float size = 150f; // tile size
 
+    public Sprite[] tileSprites = new Sprite[8];
+
     void Start()
     {
         CreateBoard();
@@ -35,6 +37,7 @@ public class TileManager : MonoBehaviour
 
                 GameObject tile = Instantiate(tilePrefab, board);
                 tile.GetComponentInChildren<TextMeshProUGUI>().text = number.ToString();
+                tile.GetComponentInChildren<Image>().sprite = tileSprites[number - 1];
 
                 RectTransform rt = tile.GetComponent<RectTransform>();
                 rt.transform.position = new Vector2(x * size, -y * size);

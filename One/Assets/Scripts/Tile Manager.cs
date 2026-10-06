@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class TileManager : MonoBehaviour
 {
-    public int rows = 3;
-    public int cols = 3;
+    private int rows = 3;
+    private int cols = 3;
     public GameObject tilePrefab;
     public RectTransform board;
 
@@ -20,11 +20,15 @@ public class TileManager : MonoBehaviour
 
     public GameObject cabinet;
     public GameObject cabinetComplete;
+    public GameObject cabinetButton;
+    private PuzzleOpen cabinetButtonScript;
 
     void Start()
     {
         CreateBoard();
         Shuffle();
+        
+        cabinetButtonScript = cabinetButton.GetComponent<PuzzleOpen>();
     }
 
     void CreateBoard()
@@ -97,6 +101,8 @@ public class TileManager : MonoBehaviour
                 return;
             number++;
         }
+        cabinetButtonScript.targetPuzzle = cabinetComplete;
+        
         StartCoroutine(openCabinet());
     }
 

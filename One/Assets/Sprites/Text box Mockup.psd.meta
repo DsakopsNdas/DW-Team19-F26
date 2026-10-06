@@ -336,7 +336,7 @@ TextureImporter:
         width: 157
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
         width: 151
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -365,6 +365,27 @@ TextureImporter:
       bones: []
       spriteID: 00aa159dce7357f4fa9e3c510080ef03
       internalID: -418995273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inventory
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 431
+        width: 156
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 64, y: 63, z: 59, w: 60}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12648aa9ac7248748888c1cca65b93e0
+      internalID: 1582085373
       vertices: []
       indices: 
       edges: []
@@ -384,6 +405,7 @@ TextureImporter:
       BackNeutral: -418995273
       ExitButtonClicked: 1454442098
       ExitNeutul: -60126431
+      Inventory: 1582085373
       LeftArrowHover: -1964431068
       LeftArrowNeutral: -937324853
       LeftArrowPressed: -357865767

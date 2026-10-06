@@ -326,7 +326,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 75054116f1c914e42bd7f5520aec33f0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0f867ca9066c03842b6b26e6eca1baf1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8467ef768442c984c95fc4940c830fa5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b5f15d1c2331784e99a7c9e21597cf6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1061,6 +1061,15 @@ MonoBehaviour:
   tilePrefab: {fileID: 2118427785091104628, guid: 3d090f87afa5eda47b1497fd6fd71acd, type: 3}
   board: {fileID: 804908198}
   size: 150
+  tileSprites:
+  - {fileID: 21300000, guid: e29e300bbcfc35845ae4c8dc7f74e834, type: 3}
+  - {fileID: 21300000, guid: 9a2f24e09a322bd409ba06b49ac35216, type: 3}
+  - {fileID: 21300000, guid: 6d13c63e45605804a9dea290b117f130, type: 3}
+  - {fileID: 21300000, guid: e2513f2d47986c448a1426e1b02b10b2, type: 3}
+  - {fileID: 1254779311, guid: 7bf38c5a869384f4c8b35731d801c797, type: 3}
+  - {fileID: 21300000, guid: 65299c1d31d54f642972b45d608bc87c, type: 3}
+  - {fileID: 21300000, guid: 8c5e1925c05c41d41ab2a7d86f140ef9, type: 3}
+  - {fileID: 21300000, guid: fe98f2a03f677b146a413a08290b0825, type: 3}
 --- !u!1 &1185065690
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,7 +1313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 392e8ab04acca894fa56234c8f8718f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c8302b81ffb952944b43de7c58598a88, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

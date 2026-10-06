@@ -1,7 +1,8 @@
-using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
 
 public class TileManager : MonoBehaviour
 {
@@ -13,9 +14,12 @@ public class TileManager : MonoBehaviour
     private List<GameObject> tiles = new List<GameObject>();
     private Vector2 emptySpace;
 
-    [SerializeField] float size = 150f; // tile size
+    float size = 150f; // tile size
 
     public Sprite[] tileSprites = new Sprite[8];
+
+    public GameObject cabinet;
+    public GameObject cabinetComplete;
 
     void Start()
     {
@@ -93,7 +97,15 @@ public class TileManager : MonoBehaviour
                 return;
             number++;
         }
-        Debug.Log("You Win!");
+        StartCoroutine(openCabinet());
+    }
+
+    IEnumerator openCabinet()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        cabinetComplete.SetActive(true);
+        cabinet.SetActive(false);
     }
 
 }

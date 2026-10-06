@@ -13,6 +13,8 @@ public class TileManager : MonoBehaviour
     private List<GameObject> tiles = new List<GameObject>();
     private Vector2 emptySpace;
 
+    [SerializeField] float size = 150f; // tile size
+
     void Start()
     {
         CreateBoard();
@@ -21,7 +23,7 @@ public class TileManager : MonoBehaviour
 
     void CreateBoard()
     {
-        float size = 500f; // tile size
+        
         emptySpace = new Vector2(cols - 1, rows - 1);
 
         int number = 1;
@@ -35,6 +37,7 @@ public class TileManager : MonoBehaviour
                 tile.GetComponentInChildren<TextMeshProUGUI>().text = number.ToString();
 
                 RectTransform rt = tile.GetComponent<RectTransform>();
+                rt.transform.position = new Vector2(x * size, -y * size);
                 rt.anchoredPosition = new Vector2(x * size, -y * size);
 
                 tile.GetComponent<Tile>().Init(new Vector2(x, y), this);
@@ -60,12 +63,13 @@ public class TileManager : MonoBehaviour
             emptySpace = oldPos;
             CheckWin();
         }
+        
     }
 
     void Shuffle()
     {
         // Simple shuffle: randomize tile moves
-        for (int i = 0; i < 100; i++)
+        for (int i = 0; i < 150; i++)
         {
             foreach (var tile in tiles)
             {

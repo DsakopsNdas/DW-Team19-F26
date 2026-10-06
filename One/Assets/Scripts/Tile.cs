@@ -16,7 +16,8 @@ public class Tile : MonoBehaviour
     {
         pos = newPos;
         RectTransform rt = GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector2(newPos.x * 100f, -newPos.y * 100f);
+        rt.anchoredPosition = new Vector2(newPos.x * 150f, -newPos.y * 150f);
+        //rt.transform.position = new Vector2(newPos.x * 150f, -newPos.y * 150f);
     }
 
     public void OnClick()

@@ -27,7 +27,10 @@ public class Items : MonoBehaviour
 
         foreach (Item items in items)
         {
-            itemTypeList.Add(item.Type);
+            if (!itemTypeList.Contains(item.Type))
+            {
+                itemTypeList.Add(item.Type);
+            }
         }
 
         foreach (Transform child in inventoryPanel.transform)

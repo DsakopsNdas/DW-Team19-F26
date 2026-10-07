@@ -44,7 +44,6 @@ public class TileManager : MonoBehaviour
                 if (x == cols - 1 && y == rows - 1) continue; // leave empty
 
                 GameObject tile = Instantiate(tilePrefab, board);
-                tile.GetComponentInChildren<TextMeshProUGUI>().text = number.ToString();
                 tile.GetComponentInChildren<Image>().sprite = tileSprites[number - 1];
 
                 RectTransform rt = tile.GetComponent<RectTransform>();

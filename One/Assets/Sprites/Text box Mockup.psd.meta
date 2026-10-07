@@ -390,6 +390,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: MousePointer
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 576
+        width: 148
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cad33a4626eacd54d9398e90e2f15871
+      internalID: -1467669839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuitButton Neutrel
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 650
+        width: 447
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a666c955dc0838c46be64ec02f745201
+      internalID: -1975487837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: QuitButtonPressed
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 742
+        width: 436
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a059d796f348b43900f572e22c6dfd
+      internalID: 957477531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -409,6 +472,9 @@ TextureImporter:
       LeftArrowHover: -1964431068
       LeftArrowNeutral: -937324853
       LeftArrowPressed: -357865767
+      MousePointer: -1467669839
+      QuitButton Neutrel: -1975487837
+      QuitButtonPressed: 957477531
       RightArrowClicked: 774147547
       RightArrowHover: -814708085
       RightArrowNeutral: 1547957244

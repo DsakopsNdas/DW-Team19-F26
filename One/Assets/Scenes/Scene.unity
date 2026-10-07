@@ -1121,6 +1121,14 @@ PrefabInstance:
       propertyPath: m_SpriteState.m_PressedSprite
       value: 
       objectReference: {fileID: 1118843529, guid: 850e75108a509ba4e878f24b91da9314, type: 3}
+    - target: {fileID: 5001313476186009609, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 324254791}
+    - target: {fileID: 5001313476186009609, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivatePuzzle
+      objectReference: {fileID: 0}
     - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1231,6 +1239,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
   m_PrefabInstance: {fileID: 324254789}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &324254791 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1445263570245730236, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+  m_PrefabInstance: {fileID: 324254789}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f526c765a1a994491c647abd60ae5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &331282329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5865,6 +5884,14 @@ PrefabInstance:
       propertyPath: m_SpriteState.m_PressedSprite
       value: 
       objectReference: {fileID: 1118843529, guid: 850e75108a509ba4e878f24b91da9314, type: 3}
+    - target: {fileID: 5001313476186009609, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2101907937}
+    - target: {fileID: 5001313476186009609, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivatePuzzle
+      objectReference: {fileID: 0}
     - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5975,6 +6002,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
   m_PrefabInstance: {fileID: 2101907935}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2101907937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1445263570245730236, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+  m_PrefabInstance: {fileID: 2101907935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f526c765a1a994491c647abd60ae5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2108998846
 GameObject:
   m_ObjectHideFlags: 0

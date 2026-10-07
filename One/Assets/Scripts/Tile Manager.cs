@@ -76,7 +76,7 @@ public class TileManager : MonoBehaviour
         
     }
 
-    void Shuffle()
+    public void Shuffle()
     {
         // Simple shuffle: randomize tile moves
         for (int i = 0; i < 150; i++)

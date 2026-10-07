@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class InventorySystem : MonoBehaviour
 {
-    //public bool circlePieceObtained = false;
+    public bool circlePieceObtained = false;
     public GameObject circlePiece;
     public GameObject circlePieceIcon;
 
     public void ObtainCirclePiece()
     {
-        //circlePieceObtained = true;
+        circlePieceObtained = true;
         circlePiece.SetActive(false);
         circlePieceIcon.SetActive(true);
     }
 
-    //public bool trianglePieceObtained = false;
+    public bool trianglePieceObtained = false;
     public GameObject trianglePiece;
     public GameObject trianglePieceIcon;
 
     public void ObtainTrianglePiece()
     {
-        //trianglePieceObtained = true;
+        trianglePieceObtained = true;
         trianglePiece.SetActive(false);
         trianglePieceIcon.SetActive(true);
     }

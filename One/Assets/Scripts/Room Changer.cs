@@ -13,11 +13,6 @@ public class RoomChanger : MonoBehaviour
 
     public GameObject navButtons;
 
-    private void Start()
-    {
-        navButtons = GameObject.FindWithTag("Nav Buttons");
-    }
-
     public void ActivateNorth()
     {
         direction = "north";

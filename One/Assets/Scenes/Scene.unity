@@ -3874,7 +3874,7 @@ PrefabInstance:
     - target: {fileID: 1445263570245730236, guid: c0d5935e0421d954388c930250787cd0, type: 3}
       propertyPath: parentRoom
       value: 
-      objectReference: {fileID: 926068241}
+      objectReference: {fileID: 1060534542}
     - target: {fileID: 1445263570245730236, guid: c0d5935e0421d954388c930250787cd0, type: 3}
       propertyPath: targetPuzzle
       value: 

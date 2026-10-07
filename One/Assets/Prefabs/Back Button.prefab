@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1445263570245730236}
         m_TargetAssemblyTypeName: PuzzleOpen, Assembly-CSharp
         m_MethodName: ActivatePuzzle
         m_Mode: 1
@@ -148,5 +148,8 @@ MonoBehaviour:
   parentRoom: {fileID: 0}
   targetPuzzle: {fileID: 0}
   navButtonsOnAtTargetScene: 1
+  inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  requiredItem: 0
+  itemsManager: {fileID: 0}

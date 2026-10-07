@@ -12,6 +12,7 @@ public class RoomChanger : MonoBehaviour
     public string direction = "north";
 
     public GameObject navButtons;
+    public GameObject inventory;
 
     public void ActivateNorth()
     {

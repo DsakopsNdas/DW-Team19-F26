@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 197908989}
   m_Layer: 5
   m_Name: Inventory Panel
-  m_TagString: Untagged
+  m_TagString: Inventory
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -669,7 +669,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1364334627}
-  m_Father: {fileID: 398244329}
+  m_Father: {fileID: 1168311597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -1677,7 +1677,6 @@ RectTransform:
   m_Children:
   - {fileID: 1720717847}
   - {fileID: 208115076}
-  - {fileID: 197908988}
   m_Father: {fileID: 1168311597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3264,6 +3263,7 @@ RectTransform:
   - {fileID: 1064420441}
   - {fileID: 345174292}
   - {fileID: 398244329}
+  - {fileID: 197908988}
   - {fileID: 1178966807}
   - {fileID: 2050556670}
   m_Father: {fileID: 0}
@@ -3466,6 +3466,7 @@ MonoBehaviour:
   westRoom: {fileID: 503435870}
   direction: north
   navButtons: {fileID: 398244328}
+  inventory: {fileID: 197908987}
 --- !u!114 &1178966805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3582,6 +3583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items: []
+  itemTypeList: 
   inventoryIcon: {fileID: 2712842276349055179, guid: bcbb4b72a2ba3f24b80a431a1e090524, type: 3}
   inventoryPanel: {fileID: 1364334627}
 --- !u!1 &1185065690
@@ -5269,8 +5271,11 @@ MonoBehaviour:
   parentRoom: {fileID: 1989394360}
   targetPuzzle: {fileID: 1558611837}
   navButtonsOnAtTargetScene: 0
+  inventoryOnAtTargetScene: 0
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  requiredItem: 6
+  itemsManager: {fileID: 0}
 --- !u!114 &1759544204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5668,8 +5673,11 @@ MonoBehaviour:
   parentRoom: {fileID: 600155104}
   targetPuzzle: {fileID: 804908197}
   navButtonsOnAtTargetScene: 0
+  inventoryOnAtTargetScene: 0
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  requiredItem: 0
+  itemsManager: {fileID: 0}
 --- !u!114 &2009133953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6105,8 +6113,11 @@ MonoBehaviour:
   parentRoom: {fileID: 503435870}
   targetPuzzle: {fileID: 200295032}
   navButtonsOnAtTargetScene: 0
+  inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  requiredItem: 0
+  itemsManager: {fileID: 0}
 --- !u!114 &2108998851
 MonoBehaviour:
   m_ObjectHideFlags: 0

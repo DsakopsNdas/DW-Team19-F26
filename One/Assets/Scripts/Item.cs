@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public enum ItemType
 {
+    None,
     Fire_Paper1,
     Fire_Paper2,
     Fire_Paper3,

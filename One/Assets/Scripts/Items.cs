@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Items : MonoBehaviour
 {
-    [SerializeField] List<Item> items = null;
+    public List<Item> items = null;
+    public List<ItemType> itemTypeList;
 
     public static Items itemsInstance;
 
@@ -22,6 +23,11 @@ public class Items : MonoBehaviour
         if (!items.Contains(item))
         {
             items.Add(item);
+        }
+
+        foreach (Item items in items)
+        {
+            itemTypeList.Add(item.Type);
         }
 
         foreach (Transform child in inventoryPanel.transform)

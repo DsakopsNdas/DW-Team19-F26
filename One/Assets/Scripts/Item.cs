@@ -18,9 +18,11 @@ public enum ItemType
 public class Item : MonoBehaviour
 {
     public ItemType Type;
+    public Sprite icon;
 
     private void OnEnable()
     {
+        icon = gameObject.GetComponent<Image>().sprite;
         gameObject.GetComponent<Button>().onClick.AddListener(() => Items.itemsInstance.ObtainItem(this, gameObject));
     }
 }

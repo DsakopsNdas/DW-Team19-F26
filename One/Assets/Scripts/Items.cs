@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Items : MonoBehaviour
 {
     [SerializeField] List<Item> items = null;
 
     public static Items itemsInstance;
+
+    [SerializeField] GameObject inventoryIcon;
+    [SerializeField] Transform inventoryPanel;
 
     private void Start()
     {
@@ -15,7 +19,22 @@ public class Items : MonoBehaviour
 
     public void ObtainItem(Item item, GameObject itemObject)
     {
-        items.Add(item);
+        if (!items.Contains(item))
+        {
+            items.Add(item);
+        }
+
+        foreach (Transform child in inventoryPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        for (int i = 0; i < items.Count; i++)
+        {
+            GameObject[] iconObject = new GameObject[i + 1];
+            iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
+            iconObject[i].GetComponent<Image>().sprite = items[i].icon;
+        }
+
         itemObject.SetActive(false);
     }
 }

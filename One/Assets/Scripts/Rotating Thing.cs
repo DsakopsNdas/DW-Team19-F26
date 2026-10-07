@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class RotatingThing : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Vector3 rotateLeft = new Vector3(0, 0, 45);
+    private Vector3 rotateRight = new Vector3(0, 0, -45);
+
+    [SerializeField] Vector3 mousePos;
+
+    private void Update()
     {
-        
+        mousePos = Input.mousePosition;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Rotate()
     {
-        
+        if (mousePos.x <= 1280 / 2)
+        {
+            gameObject.transform.Rotate(rotateLeft, Space.Self);
+        }
+        else if (mousePos.x >= 1280 / 2)
+        {
+            gameObject.transform.Rotate(rotateRight, Space.Self);
+        }
     }
 }

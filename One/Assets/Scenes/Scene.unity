@@ -428,6 +428,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!224 &128422971 stripped
 RectTransform:
@@ -530,6 +531,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!114 &130152240
 MonoBehaviour:
@@ -1198,7 +1200,7 @@ GameObject:
   - component: {fileID: 257083085}
   m_Layer: 5
   m_Name: Submit_Button
-  m_TagString: Untagged
+  m_TagString: Submit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1411,6 +1413,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!114 &296880955
 MonoBehaviour:
@@ -1938,6 +1941,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!114 &356485710
 MonoBehaviour:
@@ -2211,6 +2215,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!1 &398244328
 GameObject:
@@ -2549,6 +2554,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!1 &503435870
 GameObject:
@@ -3020,7 +3026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &600155105
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3195,6 +3201,7 @@ MonoBehaviour:
   northRoom: {fileID: 600155104}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!224 &805029883
 RectTransform:
@@ -3388,6 +3395,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!114 &891670274
 MonoBehaviour:
@@ -3525,7 +3533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &926068242
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3929,6 +3937,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!224 &1088341968 stripped
 RectTransform:
@@ -4409,6 +4418,7 @@ MonoBehaviour:
   navButtons: {fileID: 398244328}
   inventory: {fileID: 197908987}
   cauldronLit: 0
+  submitButton: {fileID: 257083080}
 --- !u!114 &1178966805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5971,6 +5981,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!114 &1717789283
 MonoBehaviour:
@@ -6647,6 +6658,7 @@ MonoBehaviour:
   northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
   dresserPuzzleManager: {fileID: 0}
 --- !u!114 &1769167749
 MonoBehaviour:

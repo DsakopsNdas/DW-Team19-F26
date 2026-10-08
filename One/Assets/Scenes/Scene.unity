@@ -3645,7 +3645,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d621594896a266740a4a9628e83e6436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 3
+  Type: 4
   icon: {fileID: 0}
 --- !u!224 &1088341968 stripped
 RectTransform:

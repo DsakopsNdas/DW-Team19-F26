@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DresserPuzzleManager : MonoBehaviour
 {
@@ -17,9 +18,25 @@ public class DresserPuzzleManager : MonoBehaviour
     public GameObject dresserComplete;
     public PuzzleOpen dresserButtonScript;
 
+    public Sprite[] sigilSprites = new Sprite[4];
+    public GameObject sigilPrefab;
+    public Transform sigilContainer;
+
     private void Start()
     {
         puzzleOpen = GetComponent<PuzzleOpen>();
+    }
+
+    public void InputSigil(int SigilIndex)
+    {
+        inputtedSigils[inputtedSigilCount] = SigilIndex;
+        
+        for (int i = inputtedSigilCount;  i < inputtedSigils.Length; i++)
+        {
+            GameObject[] iconObject = new GameObject[i + 1];
+            iconObject[i] = Instantiate(sigilPrefab, sigilContainer);
+            iconObject[i].GetComponent<Image>().sprite = sigilSprites[i];
+        }
     }
 
     public void Submit()

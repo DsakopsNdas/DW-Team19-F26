@@ -13,6 +13,8 @@ public class PotionMaker : MonoBehaviour
     public bool crystalVodka = false;
 
     public GameObject cauldronFire;
+    public GameObject cauldronOnFire;
+    public GameObject cauldronNoFire;
 
     public GameObject eventSystem;
     public Items itemsManager;
@@ -29,6 +31,8 @@ public class PotionMaker : MonoBehaviour
         {
             roomChanger.cauldronLit = true;
             cauldronFire.SetActive(true);
+            cauldronOnFire.SetActive(true);
+            cauldronNoFire.SetActive(false);
             UseItem(Type);
         }
 

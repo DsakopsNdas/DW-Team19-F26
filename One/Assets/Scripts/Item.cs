@@ -81,25 +81,25 @@ public class Item : MonoBehaviour
             {
                 if (Type == ItemType.Sigil1)
                 {
-                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 1;
+                    dresserPuzzleManager.InputSigil(1);
                     dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil2)
                 {
-                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 2;
+                    dresserPuzzleManager.InputSigil(2);
                     dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil3)
                 {
-                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 3;
+                    dresserPuzzleManager.InputSigil(3);
                     dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil4)
                 {
-                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 4;
+                    dresserPuzzleManager.InputSigil(4);
                     dresserPuzzleManager.inputtedSigilCount++;
                 }
             }

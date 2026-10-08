@@ -7,6 +7,7 @@ TagManager:
   - Event System
   - Nav Buttons
   - Inventory
+  - Tile
   layers:
   - Default
   - TransparentFX

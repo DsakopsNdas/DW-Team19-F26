@@ -42,7 +42,21 @@ public class Items : MonoBehaviour
             }
         }
 
-        RenderInventory();
+        foreach (Transform child in inventoryPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        for (int i = 0; i < itemsList.Count; i++)
+        {
+            GameObject[] iconObject = new GameObject[i + 1];
+            iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
+            iconObject[i].GetComponent<Button>().onClick.AddListener(itemsList[i].ItemClick);
+
+            if (itemsList[i].icon != null)
+            {
+                iconObject[i].GetComponent<Image>().sprite = itemsList[i].icon;
+            }
+        }
 
         itemObject.SetActive(false);
 
@@ -125,6 +139,7 @@ public class Items : MonoBehaviour
         {
             GameObject[] iconObject = new GameObject[i + 1];
             iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
+            iconObject[i].GetComponent<Button>().onClick.AddListener(itemsList[i].ItemClick);
 
             if (itemsList[i].icon != null)
             {

@@ -31,6 +31,15 @@ public class PuzzleOpen : MonoBehaviour
             if (itemsManager.itemTypeList.Contains(requiredItem))
             {
                 ChangeRoom();
+                foreach (Item items in itemsManager.itemsList)
+                {
+                    if (items.Type == requiredItem)
+                    {
+                        itemsManager.itemsList.Remove(items);
+                        break;
+                    }
+                }
+                itemsManager.itemTypeList.Remove(requiredItem);
             }
         } 
         else if (requiredItem == ItemType.None)

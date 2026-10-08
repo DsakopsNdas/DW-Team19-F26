@@ -118,7 +118,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ExitButtonClicked
+      name: CreditsButtonClicked
       rect:
         serializedVersion: 2
         x: 748
@@ -139,7 +139,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ExitNeutul
+      name: CreditsNeutul
       rect:
         serializedVersion: 2
         x: 747
@@ -462,7 +462,7 @@ TextureImporter:
         width: 155
         height: 155
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,7 +483,7 @@ TextureImporter:
         width: 155
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,8 +508,8 @@ TextureImporter:
     nameFileIdTable:
       BackButtonClikced: 1118843529
       BackNeutral: -418995273
-      ExitButtonClicked: 1454442098
-      ExitNeutul: -60126431
+      CreditsButtonClicked: 1454442098
+      CreditsNeutul: -60126431
       Inventory: 1582085373
       LeftArrowHover: -1964431068
       LeftArrowNeutral: -937324853

@@ -290,7 +290,7 @@ GameObject:
   - component: {fileID: 77832771}
   - component: {fileID: 77832774}
   m_Layer: 5
-  m_Name: Circle Piece
+  m_Name: Sigil3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -423,10 +423,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 5
   icon: {fileID: -1199558491, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
-  puzzle: {fileID: 0}
-  dresser: {fileID: 0}
+  puzzle: {fileID: 926068241}
+  dresser: {fileID: 926068241}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!224 &128422971 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
@@ -525,8 +527,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   puzzle: {fileID: 0}
   dresser: {fileID: 0}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!114 &130152240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1190,6 +1194,8 @@ GameObject:
   - component: {fileID: 257083083}
   - component: {fileID: 257083082}
   - component: {fileID: 257083084}
+  - component: {fileID: 257083086}
+  - component: {fileID: 257083085}
   m_Layer: 5
   m_Name: Submit_Button
   m_TagString: Untagged
@@ -1297,7 +1303,56 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 257083082}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 257083086}
+        m_TargetAssemblyTypeName: DresserPuzzleManager, Assembly-CSharp
+        m_MethodName: Submit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &257083085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257083080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2f526c765a1a994491c647abd60ae5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentRoom: {fileID: 926068241}
+  targetPuzzle: {fileID: 1169241577}
+  navButtonsOnAtTargetScene: 0
+  inventoryOnAtTargetScene: 1
+  eventSystem: {fileID: 0}
+  roomChanger: {fileID: 0}
+  requiredItem: 0
+  itemsManager: {fileID: 0}
+  itemUsed: 0
+--- !u!114 &257083086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257083080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e6ee1cdb1a21f64dafb07ac59fb059a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputtedSigils: 00000000000000000000000000000000
+  inputtedSigilCount: 0
+  potion: 
+  puzzleOpen: {fileID: 0}
 --- !u!1 &296880952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,8 +1408,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   puzzle: {fileID: 0}
   dresser: {fileID: 0}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!114 &296880955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1878,8 +1935,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   puzzle: {fileID: 0}
   dresser: {fileID: 0}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!114 &356485710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2149,8 +2208,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   puzzle: {fileID: 0}
   dresser: {fileID: 0}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!1 &398244328
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,6 +2249,138 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &421232876
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421232877}
+  - component: {fileID: 421232880}
+  - component: {fileID: 421232879}
+  - component: {fileID: 421232878}
+  m_Layer: 5
+  m_Name: Reset Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &421232877
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421232876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 926068242}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 226, y: -414}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &421232878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421232876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 2
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: -1344144811, guid: 850e75108a509ba4e878f24b91da9314, type: 3}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 421232879}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DresserPuzzleManager, Assembly-CSharp
+        m_MethodName: ResetSigils
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &421232879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421232876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 1694091410, guid: 850e75108a509ba4e878f24b91da9314, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &421232880
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421232876}
+  m_CullTransparentMesh: 1
 --- !u!224 &485276270 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
@@ -2351,10 +2544,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 8
   icon: {fileID: 470976581, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
-  puzzle: {fileID: 0}
-  dresser: {fileID: 0}
+  puzzle: {fileID: 926068241}
+  dresser: {fileID: 926068241}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!1 &503435870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2995,10 +3190,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 10
   icon: {fileID: 0}
-  puzzle: {fileID: 0}
+  puzzle: {fileID: 600155104}
   dresser: {fileID: 0}
+  northRoom: {fileID: 600155104}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!224 &805029883
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3188,8 +3385,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   puzzle: {fileID: 0}
   dresser: {fileID: 0}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!114 &891670274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3340,6 +3539,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 257083081}
+  - {fileID: 421232877}
   - {fileID: 2130726815}
   m_Father: {fileID: 1064420441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3591,7 +3791,7 @@ GameObject:
   - component: {fileID: 1069054352}
   - component: {fileID: 1069054355}
   m_Layer: 5
-  m_Name: Triangle Piece
+  m_Name: Sigil4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3724,10 +3924,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 4
   icon: {fileID: 524370960, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
-  puzzle: {fileID: 0}
-  dresser: {fileID: 0}
+  puzzle: {fileID: 926068241}
+  dresser: {fileID: 926068241}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!224 &1088341968 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
@@ -4206,6 +4408,7 @@ MonoBehaviour:
   direction: north
   navButtons: {fileID: 398244328}
   inventory: {fileID: 197908987}
+  cauldronLit: 0
 --- !u!114 &1178966805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4310,6 +4513,9 @@ MonoBehaviour:
   - {fileID: 1558611837}
   - {fileID: 811761377}
   - {fileID: 200295032}
+  - {fileID: 926068241}
+  - {fileID: 1060534542}
+  - {fileID: 1169241577}
 --- !u!114 &1178966812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5762,8 +5968,10 @@ MonoBehaviour:
   icon: {fileID: 0}
   puzzle: {fileID: 0}
   dresser: {fileID: 0}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!114 &1717789283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6434,10 +6642,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 11
   icon: {fileID: 2041291192, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
-  puzzle: {fileID: 0}
-  dresser: {fileID: 0}
+  puzzle: {fileID: 926068241}
+  dresser: {fileID: 926068241}
+  northRoom: {fileID: 0}
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
 --- !u!114 &1769167749
 MonoBehaviour:
   m_ObjectHideFlags: 0

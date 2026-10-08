@@ -25,8 +25,6 @@ public class PotionMaker : MonoBehaviour
 
     public void AddToCauldron(ItemType Type, RoomChanger roomChanger)
     {
-        Debug.Log(Type);
-
         if (Type == ItemType.CompleteFirePage)
         {
             roomChanger.cauldronLit = true;

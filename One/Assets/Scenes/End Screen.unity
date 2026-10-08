@@ -152,11 +152,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1651255898}
+  m_Father: {fileID: 817832368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -79, y: -280}
+  m_AnchoredPosition: {x: -79, y: -397}
   m_SizeDelta: {x: 122, y: 98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &164114222
@@ -332,6 +332,57 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 640, y: 480, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &467003179
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 467003182}
+  - component: {fileID: 467003181}
+  m_Layer: 0
+  m_Name: Ending Screen Swapper
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &467003181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467003179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77e4b6d66ba23c243aec4ac3d956d62c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endingManagerObject: {fileID: 0}
+  endingManager: {fileID: 0}
+  endingLayers:
+  - {fileID: 589332798}
+  - {fileID: 1784377240}
+  - {fileID: 1651255897}
+  - {fileID: 164114220}
+--- !u!4 &467003182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467003179}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 682.5619, y: 435.8439, z: -0.0040365607}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -579,6 +630,7 @@ RectTransform:
   - {fileID: 589332799}
   - {fileID: 1784377241}
   - {fileID: 1951658888}
+  - {fileID: 164114221}
   - {fileID: 2128143368}
   - {fileID: 1974380395}
   - {fileID: 1500527964}
@@ -756,7 +808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1651255898
 RectTransform:
   m_ObjectHideFlags: 0
@@ -768,8 +820,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 164114221}
+  m_Children: []
   m_Father: {fileID: 817832368}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1375,3 +1426,4 @@ SceneRoots:
   - {fileID: 720804868}
   - {fileID: 1992877080}
   - {fileID: 325819978}
+  - {fileID: 467003182}

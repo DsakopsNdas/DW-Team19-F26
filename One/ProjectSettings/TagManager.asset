@@ -9,6 +9,7 @@ TagManager:
   - Inventory
   - Tile
   - Submit
+  - Ending Manager
   layers:
   - Default
   - TransparentFX

@@ -33,8 +33,6 @@ public class Item : MonoBehaviour
     public GameObject puzzle;
     public GameObject dresser;
 
-    public GameObject northRoom;
-
     public GameObject eventSystem;
     public RoomChanger roomChanger;
 
@@ -72,7 +70,7 @@ public class Item : MonoBehaviour
     {
         if (puzzle != null)
         {
-            if (puzzle == northRoom)
+            if (roomChanger.direction == "north")
             {
                 potionMaker.AddToCauldron(Type, roomChanger);
             }
@@ -82,25 +80,21 @@ public class Item : MonoBehaviour
                 if (Type == ItemType.Sigil1)
                 {
                     dresserPuzzleManager.InputSigil(1);
-                    dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil2)
                 {
                     dresserPuzzleManager.InputSigil(2);
-                    dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil3)
                 {
                     dresserPuzzleManager.InputSigil(3);
-                    dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil4)
                 {
                     dresserPuzzleManager.InputSigil(4);
-                    dresserPuzzleManager.inputtedSigilCount++;
                 }
             }
         }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,8 @@ public class DresserPuzzleManager : MonoBehaviour
 {
     public int[] inputtedSigils = new int[4];
     public int inputtedSigilCount = 0;
+
+    public GameObject[] iconObject = new GameObject[4];
 
     public GameObject[] crystals = new GameObject[4];
 
@@ -29,13 +32,17 @@ public class DresserPuzzleManager : MonoBehaviour
 
     public void InputSigil(int SigilIndex)
     {
-        inputtedSigils[inputtedSigilCount] = SigilIndex;
-        
-        for (int i = inputtedSigilCount;  i < inputtedSigils.Length; i++)
+        if (!inputtedSigils.Contains(SigilIndex) && inputtedSigilCount <= 4)
         {
-            GameObject[] iconObject = new GameObject[i + 1];
-            iconObject[i] = Instantiate(sigilPrefab, sigilContainer);
-            iconObject[i].GetComponent<Image>().sprite = sigilSprites[i];
+            inputtedSigils[inputtedSigilCount] = SigilIndex;
+
+            inputtedSigilCount++;
+
+            for (int i = inputtedSigilCount; i >= inputtedSigilCount; i--)
+            {
+                iconObject[i - 1] = Instantiate(sigilPrefab, sigilContainer);
+                iconObject[i - 1].GetComponent<Image>().sprite = sigilSprites[SigilIndex - 1];
+            }
         }
     }
 
@@ -78,6 +85,10 @@ public class DresserPuzzleManager : MonoBehaviour
     public void ResetSigils()
     {
         Array.Clear(inputtedSigils, 0, inputtedSigils.Length);
+        for (int i = iconObject.Length; i > 0; i--)
+        {
+            Destroy(iconObject[i - 1]);
+        }
         inputtedSigilCount = 0;
     }
 }

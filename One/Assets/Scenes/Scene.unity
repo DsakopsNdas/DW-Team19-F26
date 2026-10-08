@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 5
-  icon: {fileID: 0}
+  icon: {fileID: -1199558491, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
 --- !u!224 &128422971 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}

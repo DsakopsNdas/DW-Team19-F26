@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -97,412 +97,181 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TextBox
+      name: Text box Mockup_0
       rect:
         serializedVersion: 2
-        x: 108
-        y: 111
-        width: 123
-        height: 123
+        x: 1190
+        y: 845
+        width: 157
+        height: 156
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 36, y: 41, z: 36, w: 41}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46f67e959d988b246975fbb2f67c682b
-      internalID: 2029932700
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ExitButtonClicked
-      rect:
-        serializedVersion: 2
-        x: 748
-        y: 405
-        width: 256
-        height: 57
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5a3a2d38dc8f547b7b2901169cdef2
-      internalID: 1454442098
+      spriteID: 985d7919b9468e84a9d69c2bfdb32850
+      internalID: -1629443133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ExitNeutul
+      name: Text box Mockup_1
       rect:
         serializedVersion: 2
-        x: 747
-        y: 314
-        width: 253
-        height: 56
+        x: 34
+        y: 746
+        width: 433
+        height: 70
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1384943132034ab45a403f5f624d5231
-      internalID: -60126431
+      spriteID: a9198e46a56ce0f4692286e5d9f48c28
+      internalID: -1748760581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartButtonSelected
+      name: Text box Mockup_2
       rect:
         serializedVersion: 2
-        x: 721
-        y: 202
-        width: 311
-        height: 67
+        x: 604
+        y: 716
+        width: 258
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b5e695fd6c1e28d43841ebecfe2617dd
-      internalID: 1155485089
+      spriteID: 833f1748b0dbd904fb8f7573c835d36a
+      internalID: 1234806372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartButtonNeutral
+      name: Text box Mockup_3
       rect:
         serializedVersion: 2
-        x: 718
-        y: 94
-        width: 317
+        x: 1190
+        y: 651
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5009ea97c32fcc458e99d8c942d9911
+      internalID: 68191787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_4
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 651
+        width: 444
         height: 68
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e41d8cb2816b7934c91b925b61b03482
-      internalID: -501039084
+      spriteID: d1e11498304a90e448de58d98048dd52
+      internalID: 1055108022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeftArrowPressed
+      name: Text box Mockup_5
       rect:
         serializedVersion: 2
-        x: 295
-        y: 408
-        width: 144
-        height: 111
+        x: 605
+        y: 629
+        width: 256
+        height: 56
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91559275587a7ad4f9379faea0f34fbf
-      internalID: -357865767
+      spriteID: e63381eefba06794a80be9c462e307fa
+      internalID: -1809520587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeftArrowHover
+      name: Text box Mockup_6
       rect:
         serializedVersion: 2
-        x: 294
-        y: 262
-        width: 146
-        height: 111
+        x: 969
+        y: 579
+        width: 151
+        height: 150
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d61d236136c597b4ebd32c5580d846e1
-      internalID: -1964431068
+      spriteID: 8ddeac6e47b6ddc4c84b42972e329155
+      internalID: -405610574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LeftArrowNeutral
+      name: Text box Mockup_7
       rect:
         serializedVersion: 2
-        x: 293
-        y: 97
-        width: 149
-        height: 125
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e276b7cf95fc004449d367cb0a86bbdd
-      internalID: -937324853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RightArrowNeutral
-      rect:
-        serializedVersion: 2
-        x: 484
-        y: 84
-        width: 146
-        height: 132
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a8d8c0f8c41e1984f91a54c49268b4db
-      internalID: 1547957244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: RightArrowHover
-      rect:
-        serializedVersion: 2
-        x: 483
-        y: 252
-        width: 148
+        x: 296
+        y: 409
+        width: 145
         height: 109
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 605e049145c406f44917c5ed584223e7
-      internalID: -814708085
+      spriteID: c8bdc6b5e48a15c4cbadf05c2131b798
+      internalID: -2065356148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RightArrowClicked
+      name: Text box Mockup_8
       rect:
         serializedVersion: 2
         x: 484
         y: 397
-        width: 148
+        width: 145
         height: 109
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2d033fd33467ca64aa635fdc8a4b292f
-      internalID: 774147547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackButtonClikced
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 341
-        width: 157
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9185bcb4d18dd144b3c83a80d8afa3c
-      internalID: 1118843529
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BackNeutral
-      rect:
-        serializedVersion: 2
-        x: 1155
-        y: 158
-        width: 151
-        height: 143
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 00aa159dce7357f4fa9e3c510080ef03
-      internalID: -418995273
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inventory
-      rect:
-        serializedVersion: 2
-        x: 1411
-        y: 431
-        width: 156
-        height: 153
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 64, y: 63, z: 59, w: 60}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12648aa9ac7248748888c1cca65b93e0
-      internalID: 1582085373
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MousePointer
-      rect:
-        serializedVersion: 2
-        x: 971
-        y: 576
-        width: 148
-        height: 171
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cad33a4626eacd54d9398e90e2f15871
-      internalID: -1467669839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: QuitButton Neutrel
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 650
-        width: 447
-        height: 71
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a666c955dc0838c46be64ec02f745201
-      internalID: -1975487837
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: QuitButtonPressed
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 742
-        width: 436
-        height: 87
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 79a059d796f348b43900f572e22c6dfd
-      internalID: 957477531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ReshuffleNeutral
-      rect:
-        serializedVersion: 2
-        x: 1191
-        y: 649
-        width: 155
-        height: 155
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c15beeca11582714f89017a2cc045a34
-      internalID: 1694091410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ReshufflePressed
-      rect:
-        serializedVersion: 2
-        x: 1190
-        y: 843
-        width: 155
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c547f4640b7458a478cd168ea3611897
-      internalID: -1344144811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CreditsPressed
-      rect:
-        serializedVersion: 2
-        x: 601
-        y: 718
-        width: 260
-        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -510,19 +279,124 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a765e5c5cf5d17e49b5e93a2e615116d
-      internalID: 1791754349
+      spriteID: b110a9c63b8fee24aa748ad23f3e1c9b
+      internalID: 1510260269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CreditsNeutral
+      name: Text box Mockup_9
       rect:
         serializedVersion: 2
-        x: 601
-        y: 630
-        width: 260
+        x: 746
+        y: 401
+        width: 258
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead3511f80ecd8847a3bec428fc00de0
+      internalID: 757063445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_10
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 341
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfe0ad8082b33f419078b066500be51
+      internalID: 660727090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_11
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 426
+        width: 161
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 421c4e2cf0d0126489ae1b05897d9c50
+      internalID: 710873923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 263
+        width: 145
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eea419d77aac114a9943d50d8f76012
+      internalID: -2114420477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 251
+        width: 145
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc5fee29dce293429ff98dc2e10d86a
+      internalID: 859082540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_14
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 314
+        width: 256
         height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -531,8 +405,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9540cd1bd698a6d4e8dbc5f69088cde1
-      internalID: -611887097
+      spriteID: 67dd1bdc83a3d024c85b8b77f865a465
+      internalID: -1017704427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_15
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 267
+        width: 43
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a921c8df7cf68f46bcbeb4a812e7196
+      internalID: -1018966409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_16
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 200
+        width: 313
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bb9427defce6f49805099af1b574cf
+      internalID: -751521596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_17
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 147
+        width: 157
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b521026cc0d37c409c9fa02b7e3c213
+      internalID: 210675384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_18
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 107
+        width: 123
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40361636975ff264980018aad46babaf
+      internalID: -789600211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 97
+        width: 145
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9eed6a015734d449bd058ef83b0c9f
+      internalID: -466287308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 85
+        width: 145
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa937063f2f39714c9b9abc21106eccc
+      internalID: 533836832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Text box Mockup_21
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 94
+        width: 312
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcd8c0eeba4c3c489f6074702f8596b
+      internalID: 958655315
       vertices: []
       indices: 
       edges: []
@@ -540,7 +561,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c62df7c11546b55438d36cf74bf70374
     internalID: 0
     vertices: []
     indices: 
@@ -548,27 +569,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BackButtonClikced: 1118843529
-      BackNeutral: -418995273
-      CreditsNeutral: -611887097
-      CreditsPressed: 1791754349
-      ExitButtonClicked: 1454442098
-      ExitNeutul: -60126431
-      Inventory: 1582085373
-      LeftArrowHover: -1964431068
-      LeftArrowNeutral: -937324853
-      LeftArrowPressed: -357865767
-      MousePointer: -1467669839
-      QuitButton Neutrel: -1975487837
-      QuitButtonPressed: 957477531
-      ReshuffleNeutral: 1694091410
-      ReshufflePressed: -1344144811
-      RightArrowClicked: 774147547
-      RightArrowHover: -814708085
-      RightArrowNeutral: 1547957244
-      StartButtonNeutral: -501039084
-      StartButtonSelected: 1155485089
-      TextBox: 2029932700
+      Text box Mockup_0: -1629443133
+      Text box Mockup_1: -1748760581
+      Text box Mockup_10: 660727090
+      Text box Mockup_11: 710873923
+      Text box Mockup_12: -2114420477
+      Text box Mockup_13: 859082540
+      Text box Mockup_14: -1017704427
+      Text box Mockup_15: -1018966409
+      Text box Mockup_16: -751521596
+      Text box Mockup_17: 210675384
+      Text box Mockup_18: -789600211
+      Text box Mockup_19: -466287308
+      Text box Mockup_2: 1234806372
+      Text box Mockup_20: 533836832
+      Text box Mockup_21: 958655315
+      Text box Mockup_3: 68191787
+      Text box Mockup_4: 1055108022
+      Text box Mockup_5: -1809520587
+      Text box Mockup_6: -405610574
+      Text box Mockup_7: -2065356148
+      Text box Mockup_8: 1510260269
+      Text box Mockup_9: 757063445
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -504,7 +504,7 @@ TextureImporter:
         width: 260
         height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -525,7 +525,7 @@ TextureImporter:
         width: 260
         height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -533,6 +533,48 @@ TextureImporter:
       bones: []
       spriteID: 9540cd1bd698a6d4e8dbc5f69088cde1
       internalID: -611887097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU WIN
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 280
+        width: 464
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6507b9bcbab8943a24555ee8d1104b
+      internalID: -1434349868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: YOU LOSE
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 117
+        width: 480
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14a6e606bfcebc478d4f2e9e925767b
+      internalID: -1110304848
       vertices: []
       indices: 
       edges: []
@@ -569,6 +611,8 @@ TextureImporter:
       StartButtonNeutral: -501039084
       StartButtonSelected: 1155485089
       TextBox: 2029932700
+      YOU LOSE: -1110304848
+      YOU WIN: -1434349868
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

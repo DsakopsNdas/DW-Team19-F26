@@ -13,17 +13,27 @@ public enum ItemType
     CirclePiece,
     RotatingPuzzlePiece,
     Leaf,
-    Sigil3
+    Sigil3,
+    SlidingTile,
+    CompleteFirePage,
+    SigilOnTable
 }
 
 public class Item : MonoBehaviour
 {
     public ItemType Type;
-    public Sprite icon;
+    public Sprite icon = null;
 
     private void OnEnable()
     {
-        icon = gameObject.GetComponent<Image>().sprite;
-        gameObject.GetComponent<Button>().onClick.AddListener(() => Items.itemsInstance.ObtainItem(this, gameObject));
+        if (gameObject.GetComponent<Image>())
+        {
+            icon = gameObject.GetComponent<Image>().sprite;
+        }
+
+        if (gameObject.GetComponent<Button>())
+        {
+            gameObject.GetComponent<Button>().onClick.AddListener(() => Items.itemsInstance.ObtainItem(this, gameObject));
+        }
     }
 }

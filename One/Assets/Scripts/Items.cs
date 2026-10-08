@@ -1,11 +1,13 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Items : MonoBehaviour
 {
-    public List<Item> items = null;
+    public List<Item> itemsList = null;
     public List<ItemType> itemTypeList;
 
     public static Items itemsInstance;
@@ -13,23 +15,30 @@ public class Items : MonoBehaviour
     [SerializeField] GameObject inventoryIcon;
     [SerializeField] Transform inventoryPanel;
 
+    public bool firePaper1Collected = false;
+    public bool firePaper2Collected = false;
+    public bool firePaper3Collected = false;
+
+    public Item completeFirePaper;
+    public GameObject sigilOnTable;
+
     private void Start()
     {
         itemsInstance = GetComponent<Items>();
     }
 
-    public void ObtainItem(Item item, GameObject itemObject)
+    public void ObtainItem(Item itemObtained, GameObject itemObject)
     {
-        if (!items.Contains(item))
+        if (!itemsList.Contains(itemObtained))
         {
-            items.Add(item);
+            itemsList.Add(itemObtained);
         }
 
-        foreach (Item items in items)
+        foreach (Item items in itemsList)
         {
-            if (!itemTypeList.Contains(item.Type))
+            if (!itemTypeList.Contains(itemObtained.Type))
             {
-                itemTypeList.Add(item.Type);
+                itemTypeList.Add(itemObtained.Type);
             }
         }
 
@@ -37,13 +46,93 @@ public class Items : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-        for (int i = 0; i < items.Count; i++)
+        for (int i = 0; i < itemsList.Count; i++)
         {
             GameObject[] iconObject = new GameObject[i + 1];
             iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
-            iconObject[i].GetComponent<Image>().sprite = items[i].icon;
+
+            if (itemsList[i].icon  != null)
+            {
+                iconObject[i].GetComponent<Image>().sprite = itemsList[i].icon;
+            }
         }
 
         itemObject.SetActive(false);
+
+        foreach (Item items in itemsList)
+        {
+            if (itemObtained.Type == ItemType.Fire_Paper1)
+            {
+                firePaper1Collected = true;
+            }
+            if (itemObtained.Type == ItemType.Fire_Paper2)
+            {
+                firePaper2Collected = true;
+            }
+            if (itemObtained.Type == ItemType.Fire_Paper3)
+            {
+                firePaper3Collected = true;
+            }
+        }
+    }
+
+    private void Update()
+    {
+        CombinePages();
+    }
+
+    public void CombinePages()
+    {
+        if (firePaper1Collected &&
+            firePaper2Collected &&
+            firePaper3Collected)
+        {
+            foreach (Item items in itemsList)
+            {
+                if (items.Type == ItemType.Fire_Paper1)
+                {
+                    itemsList.Remove(items);
+                    return;
+                }
+                if (items.Type == ItemType.Fire_Paper2)
+                {
+                    itemsList.Remove(items);
+                    return;
+                }
+                if (items.Type == ItemType.Fire_Paper3)
+                {
+                    itemsList.Remove(items);
+                    return;
+                }
+            }
+
+            itemTypeList.Remove(ItemType.Fire_Paper1);
+            itemTypeList.Remove(ItemType.Fire_Paper2);
+            itemTypeList.Remove(ItemType.Fire_Paper3);
+
+            itemsList.Add(completeFirePaper);
+            itemTypeList.Add(completeFirePaper.Type);
+
+            firePaper1Collected = false;
+            firePaper2Collected = false;
+            firePaper3Collected = false;
+
+            foreach (Transform child in inventoryPanel.transform)
+            {
+                Destroy(child.gameObject);
+            }
+            for (int i = 0; i < itemsList.Count; i++)
+            {
+                GameObject[] iconObject = new GameObject[i + 1];
+                iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
+
+                if (itemsList[i].icon != null)
+                {
+                    iconObject[i].GetComponent<Image>().sprite = itemsList[i].icon;
+                }
+            }
+
+            sigilOnTable.SetActive(true);
+        }
     }
 }

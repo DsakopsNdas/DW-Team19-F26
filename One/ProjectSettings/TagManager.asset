@@ -8,6 +8,7 @@ TagManager:
   - Nav Buttons
   - Inventory
   - Tile
+  - Submit
   layers:
   - Default
   - TransparentFX

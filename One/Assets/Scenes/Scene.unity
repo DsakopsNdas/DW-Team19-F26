@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 8
-  icon: {fileID: 0}
+  icon: {fileID: 470976581, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
 --- !u!1 &503435870
 GameObject:
   m_ObjectHideFlags: 0
@@ -3646,7 +3646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 4
-  icon: {fileID: 0}
+  icon: {fileID: 524370960, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
 --- !u!224 &1088341968 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
@@ -6347,7 +6347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 11
-  icon: {fileID: 0}
+  icon: {fileID: 2041291192, guid: 0c01d012f635b394f99bb291cc5e248f, type: 3}
 --- !u!114 &1769167749
 MonoBehaviour:
   m_ObjectHideFlags: 0

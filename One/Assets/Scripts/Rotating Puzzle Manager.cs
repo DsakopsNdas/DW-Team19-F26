@@ -10,6 +10,8 @@ public class RotatingPuzzleManager : MonoBehaviour
 
     [SerializeField] GameObject rotatingPuzzle;
     [SerializeField] GameObject rotatingPuzzleComplete;
+    [SerializeField] GameObject sinkEmpty;
+    [SerializeField] GameObject sinkFull;
 
     [SerializeField] GameObject rotatingPuzzleButton;
 
@@ -23,6 +25,8 @@ public class RotatingPuzzleManager : MonoBehaviour
 
             rotatingPuzzleComplete.SetActive(true);
             rotatingPuzzle.SetActive(false);
+            sinkEmpty.SetActive(false);
+            sinkFull.SetActive(true);
         }
     }
 

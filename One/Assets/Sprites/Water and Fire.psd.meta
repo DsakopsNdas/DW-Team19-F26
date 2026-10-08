@@ -105,7 +105,7 @@ TextureImporter:
         width: 258
         height: 237
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -126,7 +126,7 @@ TextureImporter:
         width: 311
         height: 282
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,6 +134,27 @@ TextureImporter:
       bones: []
       spriteID: 3eb3514b4d72a624bbd221081d0ef14f
       internalID: -1796095027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water and Fire_0
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 227
+        width: 118
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f6111bab353864abcf2185e47cf468
+      internalID: 461241529
       vertices: []
       indices: 
       edges: []
@@ -150,6 +171,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       FireInventory: -1796095027
+      Water and Fire_0: 461241529
       WaterInventory: -1167395795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

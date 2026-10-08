@@ -41,12 +41,15 @@ public class Item : MonoBehaviour
     public GameObject submitButton;
     public DresserPuzzleManager dresserPuzzleManager;
 
+    public PotionMaker potionMaker;
+
     private void Start()
     {
         eventSystem = GameObject.FindWithTag("Event System");
         roomChanger = eventSystem.GetComponent<RoomChanger>();
         submitButton = roomChanger.submitButton;
         dresserPuzzleManager = submitButton.GetComponent<DresserPuzzleManager>();
+        potionMaker = eventSystem.GetComponent<PotionMaker>();
     }
 
     private void OnEnable()
@@ -71,43 +74,7 @@ public class Item : MonoBehaviour
         {
             if (puzzle == northRoom)
             {
-                if (Type == ItemType.CompleteFirePage)
-                {
-                    roomChanger.cauldronLit = true;
-                }
-
-                if (roomChanger.cauldronLit)
-                {
-                    if (Type == ItemType.Water)
-                    {
-
-                    }
-
-                    if (Type == ItemType.Leaf)
-                    {
-
-                    }
-
-                    if (Type == ItemType.Crystal1)
-                    {
-
-                    }
-
-                    if (Type == ItemType.Crystal2)
-                    {
-
-                    }
-
-                    if (Type == ItemType.Crystal3)
-                    {
-
-                    }
-
-                    if (Type == ItemType.Crystal4)
-                    {
-
-                    }
-                }
+                potionMaker.AddToCauldron(Type, roomChanger);
             }
 
             if (puzzle == dresser)

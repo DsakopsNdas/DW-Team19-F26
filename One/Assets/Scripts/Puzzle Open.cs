@@ -16,6 +16,7 @@ public class PuzzleOpen : MonoBehaviour
 
     public ItemType requiredItem;
     public Items itemsManager;
+    public bool itemUsed = false;
 
     public void Start()
     {
@@ -26,11 +27,12 @@ public class PuzzleOpen : MonoBehaviour
 
     public void ActivatePuzzle()
     {
-        if (requiredItem != ItemType.None)
+        if (requiredItem != ItemType.None && itemUsed == false)
         {
             if (itemsManager.itemTypeList.Contains(requiredItem))
             {
                 ChangeRoom();
+                itemUsed = true;
                 foreach (Item items in itemsManager.itemsList)
                 {
                     if (items.Type == requiredItem)

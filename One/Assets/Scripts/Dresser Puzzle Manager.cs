@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class DresserPuzzleManager : MonoBehaviour
@@ -9,9 +8,14 @@ public class DresserPuzzleManager : MonoBehaviour
     public int[] inputtedSigils = new int[4];
     public int inputtedSigilCount = 0;
 
+    public GameObject[] crystals = new GameObject[4];
+
     public string potion;
 
     public PuzzleOpen puzzleOpen;
+
+    public GameObject dresserComplete;
+    public PuzzleOpen dresserButtonScript;
 
     private void Start()
     {
@@ -25,32 +29,33 @@ public class DresserPuzzleManager : MonoBehaviour
             inputtedSigils[2] == 4 &&
             inputtedSigils[3] == 2)
         {
-            potion = "burn";
+            crystals[0].SetActive(true);
         }
         else if (inputtedSigils[0] == 3 &&
             inputtedSigils[1] == 2 &&
             inputtedSigils[2] == 1 &&
             inputtedSigils[3] == 4)
         {
-            potion = "grow";
+            crystals[1].SetActive(true);
         }
         else if (inputtedSigils[0] == 4 &&
             inputtedSigils[1] == 1 &&
             inputtedSigils[2] == 2 &&
             inputtedSigils[3] == 3)
         {
-            potion = "shrink";
+            crystals[2].SetActive(true);
         }
         else if (inputtedSigils[0] == 2 &&
             inputtedSigils[1] == 4 &&
             inputtedSigils[2] == 3 &&
             inputtedSigils[3] == 1)
         {
-            potion = "vodka";
+            crystals[3].SetActive(true);
         }
         else return;
 
         puzzleOpen.ActivatePuzzle();
+        dresserButtonScript.targetPuzzle = dresserComplete;
     }
 
     public void ResetSigils()

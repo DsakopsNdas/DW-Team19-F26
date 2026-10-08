@@ -217,7 +217,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItem: 0
+  requiredItems: 
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &35682685
@@ -276,6 +276,116 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &70005842
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1169241578}
+    m_Modifications:
+    - target: {fileID: 174408433560193344, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_Name
+      value: Back Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 1445263570245730236, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: parentRoom
+      value: 
+      objectReference: {fileID: 1169241577}
+    - target: {fileID: 1445263570245730236, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: targetPuzzle
+      value: 
+      objectReference: {fileID: 331282329}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+--- !u!224 &70005843 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5586627873555314492, guid: c0d5935e0421d954388c930250787cd0, type: 3}
+  m_PrefabInstance: {fileID: 70005842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &77832769
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,19 +468,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 77832772}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
-        m_MethodName: ObtainCirclePiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &77832772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,7 +1509,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItem: 0
+  requiredItems: 
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &257083086
@@ -1428,8 +1526,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inputtedSigils: 00000000000000000000000000000000
   inputtedSigilCount: 0
+  crystals:
+  - {fileID: 546212528}
+  - {fileID: 1037086994}
+  - {fileID: 905964245}
+  - {fileID: 1553414585}
   potion: 
-  puzzleOpen: {fileID: 0}
+  puzzleOpen: {fileID: 257083085}
+  dresserComplete: {fileID: 1169241577}
+  dresserButtonScript: {fileID: 35682684}
 --- !u!1 &296880952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,19 +2325,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 364007052}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: IngredientSystem, Assembly-CSharp
-        m_MethodName: ObtainLeaf
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &364007052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2648,7 +2741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &503435871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2718,6 +2811,8 @@ GameObject:
   - component: {fileID: 546212529}
   - component: {fileID: 546212531}
   - component: {fileID: 546212530}
+  - component: {fileID: 546212533}
+  - component: {fileID: 546212532}
   m_Layer: 5
   m_Name: Mineral_Component_ (1)
   m_TagString: Untagged
@@ -2782,6 +2877,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546212528}
   m_CullTransparentMesh: 1
+--- !u!114 &546212532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546212528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d621594896a266740a4a9628e83e6436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 13
+  icon: {fileID: 0}
+  puzzle: {fileID: 0}
+  dresser: {fileID: 0}
+  northRoom: {fileID: 0}
+  eventSystem: {fileID: 0}
+  roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
+--- !u!114 &546212533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546212528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 546212530}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &552600279
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,7 +3037,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItem: 0
+  requiredItems: 
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &552600284
@@ -3636,6 +3796,8 @@ GameObject:
   - component: {fileID: 905964246}
   - component: {fileID: 905964248}
   - component: {fileID: 905964247}
+  - component: {fileID: 905964250}
+  - component: {fileID: 905964249}
   m_Layer: 5
   m_Name: Mineral_Component_ (3)
   m_TagString: Untagged
@@ -3700,6 +3862,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905964245}
   m_CullTransparentMesh: 1
+--- !u!114 &905964249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905964245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d621594896a266740a4a9628e83e6436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 15
+  icon: {fileID: 0}
+  puzzle: {fileID: 0}
+  dresser: {fileID: 0}
+  northRoom: {fileID: 0}
+  eventSystem: {fileID: 0}
+  roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
+--- !u!114 &905964250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905964245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 905964247}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &926068241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3789,6 +4016,8 @@ GameObject:
   - component: {fileID: 1037086995}
   - component: {fileID: 1037086997}
   - component: {fileID: 1037086996}
+  - component: {fileID: 1037086999}
+  - component: {fileID: 1037086998}
   m_Layer: 5
   m_Name: Mineral_Component_ (2)
   m_TagString: Untagged
@@ -3853,6 +4082,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037086994}
   m_CullTransparentMesh: 1
+--- !u!114 &1037086998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037086994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d621594896a266740a4a9628e83e6436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 14
+  icon: {fileID: 0}
+  puzzle: {fileID: 0}
+  dresser: {fileID: 0}
+  northRoom: {fileID: 0}
+  eventSystem: {fileID: 0}
+  roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
+--- !u!114 &1037086999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037086994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1037086996}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1060534542
 GameObject:
   m_ObjectHideFlags: 0
@@ -4051,19 +4345,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1069054353}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InventorySystem, Assembly-CSharp
-        m_MethodName: ObtainTrianglePiece
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1069054353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4613,6 +4895,7 @@ RectTransform:
   - {fileID: 1037086995}
   - {fileID: 905964246}
   - {fileID: 1553414586}
+  - {fileID: 70005843}
   m_Father: {fileID: 345174292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5609,8 +5892,10 @@ GameObject:
   - component: {fileID: 1553414586}
   - component: {fileID: 1553414588}
   - component: {fileID: 1553414587}
+  - component: {fileID: 1553414590}
+  - component: {fileID: 1553414589}
   m_Layer: 5
-  m_Name: Mineral_Component_(4)
+  m_Name: Mineral_Component_ (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5673,6 +5958,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553414585}
   m_CullTransparentMesh: 1
+--- !u!114 &1553414589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553414585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d621594896a266740a4a9628e83e6436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 16
+  icon: {fileID: 0}
+  puzzle: {fileID: 0}
+  dresser: {fileID: 0}
+  northRoom: {fileID: 0}
+  eventSystem: {fileID: 0}
+  roomChanger: {fileID: 0}
+  submitButton: {fileID: 0}
+  dresserPuzzleManager: {fileID: 0}
+--- !u!114 &1553414590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553414585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1553414587}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1558611837
 GameObject:
   m_ObjectHideFlags: 0
@@ -6831,7 +7181,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 0
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItem: 6
+  requiredItems: 
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &1759544204
@@ -7393,7 +7743,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItem: 9
+  requiredItems: 09000000
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &2009133953
@@ -7901,7 +8251,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 1
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItem: 0
+  requiredItems: 
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &2108998851

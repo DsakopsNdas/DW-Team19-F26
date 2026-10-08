@@ -14,7 +14,7 @@ public class PuzzleOpen : MonoBehaviour
     public GameObject eventSystem;
     public RoomChanger roomChanger;
 
-    public ItemType requiredItem;
+    public List<ItemType> requiredItems;
     public Items itemsManager;
     public bool itemUsed = false;
 
@@ -27,24 +27,27 @@ public class PuzzleOpen : MonoBehaviour
 
     public void ActivatePuzzle()
     {
-        if (requiredItem != ItemType.None && itemUsed == false)
+        if (requiredItems.Count != 0 && itemUsed == false)
         {
-            if (itemsManager.itemTypeList.Contains(requiredItem))
+            foreach (var item in requiredItems)
             {
-                ChangeRoom();
-                itemUsed = true;
-                foreach (Item items in itemsManager.itemsList)
+                if (itemsManager.itemTypeList.Contains(item))
                 {
-                    if (items.Type == requiredItem)
+                    ChangeRoom();
+                    itemUsed = true;
+                    foreach (Item items in itemsManager.itemsList)
                     {
-                        itemsManager.itemsList.Remove(items);
-                        itemsManager.RenderInventory();
-                        break;
+                        if (items.Type == item)
+                        {
+                            itemsManager.itemsList.Remove(items);
+                            itemsManager.RenderInventory();
+                            break;
+                        }
                     }
-                }
 
-                itemsManager.itemTypeList.Remove(requiredItem);
-                itemsManager.RenderInventory();
+                    itemsManager.itemTypeList.Remove(item);
+                    itemsManager.RenderInventory();
+                }
             }
         } 
         else

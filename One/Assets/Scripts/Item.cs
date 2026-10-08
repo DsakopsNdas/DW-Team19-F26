@@ -19,7 +19,10 @@ public enum ItemType
     CompleteFirePage,
     Sigil2,
     Water,
-    Crystal
+    Crystal1,
+    Crystal2,
+    Crystal3,
+    Crystal4
 }
 
 public class Item : MonoBehaviour
@@ -85,7 +88,22 @@ public class Item : MonoBehaviour
 
                     }
 
-                    if (Type == ItemType.Crystal)
+                    if (Type == ItemType.Crystal1)
+                    {
+
+                    }
+
+                    if (Type == ItemType.Crystal2)
+                    {
+
+                    }
+
+                    if (Type == ItemType.Crystal3)
+                    {
+
+                    }
+
+                    if (Type == ItemType.Crystal4)
                     {
 
                     }

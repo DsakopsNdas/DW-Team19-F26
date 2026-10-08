@@ -16,6 +16,8 @@ public class Reshuffle : MonoBehaviour
 
     public void ReshuffleBoard()
     {
+        tileManager.ClearBoard();
+        tileManager.CreateBoard();
         tileManager.Shuffle();
     }
 }

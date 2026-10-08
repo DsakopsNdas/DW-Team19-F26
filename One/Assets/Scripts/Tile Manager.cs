@@ -11,7 +11,7 @@ public class TileManager : MonoBehaviour
     public GameObject tilePrefab;
     public RectTransform board;
 
-    private List<GameObject> tiles = new List<GameObject>();
+    [SerializeField] List<GameObject> tiles = new List<GameObject>();
     private Vector2 emptySpace;
 
     float size = 150f; // tile size
@@ -31,7 +31,7 @@ public class TileManager : MonoBehaviour
         cabinetButtonScript = cabinetButton.GetComponent<PuzzleOpen>();
     }
 
-    void CreateBoard()
+    public void CreateBoard()
     {
         
         emptySpace = new Vector2(cols - 1, rows - 1);
@@ -57,6 +57,17 @@ public class TileManager : MonoBehaviour
             }
         }
     }
+
+    public void ClearBoard()
+    {
+        for (int i = tiles.Count - 1; i > -1; i--)
+        {
+            Debug.Log(tiles.Count);
+            Destroy(tiles[i].gameObject);
+        }
+        tiles.Clear();
+    }
+
 
     public bool IsNextToEmpty(Vector2 pos)
     {

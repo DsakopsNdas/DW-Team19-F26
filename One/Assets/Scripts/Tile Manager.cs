@@ -12,6 +12,7 @@ public class TileManager : MonoBehaviour
     public RectTransform board;
 
     [SerializeField] List<GameObject> tiles = new List<GameObject>();
+    public AudioSource audioSource;
     private Vector2 emptySpace;
 
     float size = 150f; // tile size
@@ -79,6 +80,7 @@ public class TileManager : MonoBehaviour
     {
         if (IsNextToEmpty(tile.pos))
         {
+            audioSource.PlayOneShot(audioSource.clip);
             Vector2 oldPos = tile.pos;
             tile.Move(emptySpace);
             emptySpace = oldPos;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,14 +30,20 @@ public class Item : MonoBehaviour
     public GameObject puzzle;
     public GameObject dresser;
 
+    public GameObject northRoom;
+
     public GameObject eventSystem;
     public RoomChanger roomChanger;
+
+    public GameObject submitButton;
+    public DresserPuzzleManager dresserPuzzleManager;
 
     private void Start()
     {
         eventSystem = GameObject.FindWithTag("Event System");
         roomChanger = eventSystem.GetComponent<RoomChanger>();
-
+        submitButton = roomChanger.submitButton;
+        dresserPuzzleManager = submitButton.GetComponent<DresserPuzzleManager>();
     }
 
     private void OnEnable()
@@ -59,26 +66,29 @@ public class Item : MonoBehaviour
     {
         if (puzzle != null)
         {
-            if (roomChanger.direction == "north")
+            if (puzzle == northRoom)
             {
                 if (Type == ItemType.CompleteFirePage)
                 {
-
+                    roomChanger.cauldronLit = true;
                 }
 
-                if (Type == ItemType.Water)
+                if (roomChanger.cauldronLit)
                 {
+                    if (Type == ItemType.Water)
+                    {
 
-                }
+                    }
 
-                if (Type == ItemType.Leaf)
-                {
+                    if (Type == ItemType.Leaf)
+                    {
 
-                }
+                    }
 
-                if (Type == ItemType.Crystal)
-                {
+                    if (Type == ItemType.Crystal)
+                    {
 
+                    }
                 }
             }
 
@@ -86,22 +96,26 @@ public class Item : MonoBehaviour
             {
                 if (Type == ItemType.Sigil1)
                 {
-
+                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 1;
+                    dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil2)
                 {
-
+                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 2;
+                    dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil3)
                 {
-
+                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 3;
+                    dresserPuzzleManager.inputtedSigilCount++;
                 }
 
                 if (Type == ItemType.Sigil4)
                 {
-
+                    dresserPuzzleManager.inputtedSigils[dresserPuzzleManager.inputtedSigilCount] = 4;
+                    dresserPuzzleManager.inputtedSigilCount++;
                 }
             }
         }

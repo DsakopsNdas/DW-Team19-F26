@@ -14,6 +14,10 @@ public class RoomChanger : MonoBehaviour
     public GameObject navButtons;
     public GameObject inventory;
 
+    public bool cauldronLit = false;
+
+    public GameObject submitButton;
+
     public void ActivateNorth()
     {
         direction = "north";

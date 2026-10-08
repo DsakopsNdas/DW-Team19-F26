@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class RotatingPuzzleButtonStates : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public PuzzleOpen rotatingPuzzleButton;
+    public GameObject centralRing;
+    public GameObject centralRingNoSigil;
+
+    public void SetState()
     {
-        
+        if (rotatingPuzzleButton.itemUsed)
+        {
+            centralRing.SetActive(true);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SigilObtained()
     {
-        
+        if (rotatingPuzzleButton.itemUsed)
+        {
+            centralRing.SetActive(false);
+            centralRingNoSigil.SetActive(true);
+        }
     }
 }

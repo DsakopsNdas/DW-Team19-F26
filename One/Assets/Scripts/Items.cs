@@ -42,23 +42,15 @@ public class Items : MonoBehaviour
             }
         }
 
-        foreach (Transform child in inventoryPanel.transform)
-        {
-            Destroy(child.gameObject);
-        }
-        for (int i = 0; i < itemsList.Count; i++)
-        {
-            GameObject[] iconObject = new GameObject[i + 1];
-            iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
-
-            if (itemsList[i].icon  != null)
-            {
-                iconObject[i].GetComponent<Image>().sprite = itemsList[i].icon;
-            }
-        }
+        RenderInventory();
 
         itemObject.SetActive(false);
 
+        CheckForFirePages(itemObtained);
+    }
+
+    public void CheckForFirePages(Item itemObtained)
+    {
         foreach (Item items in itemsList)
         {
             if (itemObtained.Type == ItemType.Fire_Paper1)
@@ -117,22 +109,27 @@ public class Items : MonoBehaviour
             firePaper2Collected = false;
             firePaper3Collected = false;
 
-            foreach (Transform child in inventoryPanel.transform)
-            {
-                Destroy(child.gameObject);
-            }
-            for (int i = 0; i < itemsList.Count; i++)
-            {
-                GameObject[] iconObject = new GameObject[i + 1];
-                iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
-
-                if (itemsList[i].icon != null)
-                {
-                    iconObject[i].GetComponent<Image>().sprite = itemsList[i].icon;
-                }
-            }
+            RenderInventory();
 
             sigilOnTable.SetActive(true);
+        }
+    }
+
+    public void RenderInventory()
+    {
+        foreach (Transform child in inventoryPanel.transform)
+        {
+            Destroy(child.gameObject);
+        }
+        for (int i = 0; i < itemsList.Count; i++)
+        {
+            GameObject[] iconObject = new GameObject[i + 1];
+            iconObject[i] = Instantiate(inventoryIcon, inventoryPanel);
+
+            if (itemsList[i].icon != null)
+            {
+                iconObject[i].GetComponent<Image>().sprite = itemsList[i].icon;
+            }
         }
     }
 }

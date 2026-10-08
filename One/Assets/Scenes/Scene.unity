@@ -7672,7 +7672,7 @@ MonoBehaviour:
   inventoryOnAtTargetScene: 0
   eventSystem: {fileID: 0}
   roomChanger: {fileID: 0}
-  requiredItems: 
+  requiredItems: 06000000
   itemsManager: {fileID: 0}
   itemUsed: 0
 --- !u!114 &1759544204

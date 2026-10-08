@@ -420,7 +420,7 @@ TextureImporter:
         width: 447
         height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,7 +441,7 @@ TextureImporter:
         width: 436
         height: 87
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -449,6 +449,48 @@ TextureImporter:
       bones: []
       spriteID: 79a059d796f348b43900f572e22c6dfd
       internalID: 957477531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReshuffleNeutral
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 649
+        width: 155
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15beeca11582714f89017a2cc045a34
+      internalID: 1694091410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ReshufflePressed
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 843
+        width: 155
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c547f4640b7458a478cd168ea3611897
+      internalID: -1344144811
       vertices: []
       indices: 
       edges: []
@@ -475,6 +517,8 @@ TextureImporter:
       MousePointer: -1467669839
       QuitButton Neutrel: -1975487837
       QuitButtonPressed: 957477531
+      ReshuffleNeutral: 1694091410
+      ReshufflePressed: -1344144811
       RightArrowClicked: 774147547
       RightArrowHover: -814708085
       RightArrowNeutral: 1547957244

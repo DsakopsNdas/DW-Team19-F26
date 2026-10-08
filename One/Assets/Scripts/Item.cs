@@ -22,13 +22,16 @@ public enum ItemType
 public class Item : MonoBehaviour
 {
     public ItemType Type;
-    public Sprite icon = null;
+    public Sprite icon;
 
     private void OnEnable()
     {
-        if (gameObject.GetComponent<Image>())
+        if (icon == null)
         {
-            icon = gameObject.GetComponent<Image>().sprite;
+            if (gameObject.GetComponent<Image>())
+            {
+                icon = gameObject.GetComponent<Image>().sprite;
+            }
         }
 
         if (gameObject.GetComponent<Button>())

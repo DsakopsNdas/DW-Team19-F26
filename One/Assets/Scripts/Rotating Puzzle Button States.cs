@@ -8,7 +8,7 @@ public class RotatingPuzzleButtonStates : MonoBehaviour
     public GameObject centralRing;
     public GameObject centralRingNoSigil;
 
-    public void SetState()
+    public void Update()
     {
         if (rotatingPuzzleButton.itemUsed)
         {

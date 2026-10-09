@@ -90,6 +90,18 @@ public class TileManager : MonoBehaviour
         
     }
 
+    public void MoveTileNoSound(Tile tile)
+    {
+        if (IsNextToEmpty(tile.pos))
+        {
+            Vector2 oldPos = tile.pos;
+            tile.Move(emptySpace);
+            emptySpace = oldPos;
+            CheckWin();
+        }
+
+    }
+
     public void Shuffle()
     {
         // Simple shuffle: randomize tile moves
@@ -98,7 +110,7 @@ public class TileManager : MonoBehaviour
             foreach (var tile in tiles)
             {
                 if (IsNextToEmpty(tile.GetComponent<Tile>().pos))
-                    MoveTile(tile.GetComponent<Tile>());
+                    MoveTileNoSound(tile.GetComponent<Tile>());
             }
         }
     }

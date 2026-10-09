@@ -15,6 +15,8 @@ public class RotatingPuzzleManager : MonoBehaviour
 
     [SerializeField] GameObject rotatingPuzzleButton;
 
+    public AudioSource waterSound;
+
     public void CheckWin()
     {
         if (isZero(outerRing.transform.rotation.eulerAngles.z)
@@ -27,6 +29,8 @@ public class RotatingPuzzleManager : MonoBehaviour
             rotatingPuzzle.SetActive(false);
             sinkEmpty.SetActive(false);
             sinkFull.SetActive(true);
+
+            waterSound.PlayOneShot(waterSound.clip);
         }
     }
 

@@ -20,6 +20,8 @@ public class PotionMaker : MonoBehaviour
 
     public GameObject[] potions = new GameObject[4];
 
+    public AudioSource addIngredientSound;
+
     public void Start()
     {
         eventSystem = GameObject.FindWithTag("Event System");
@@ -40,6 +42,7 @@ public class PotionMaker : MonoBehaviour
             cauldronOnFire.SetActive(true);
             cauldronNoFire.SetActive(false);
             UseItem(Type);
+            addIngredientSound.PlayOneShot(addIngredientSound.clip);
         }
 
         if (roomChanger.cauldronLit)
@@ -48,36 +51,42 @@ public class PotionMaker : MonoBehaviour
             {
                 waterIn = true;
                 UseItem(Type);
+                addIngredientSound.PlayOneShot(addIngredientSound.clip);
             }
 
             if (Type == ItemType.Leaf)
             {
                 leafIn = true;
                 UseItem(Type);
+                addIngredientSound.PlayOneShot(addIngredientSound.clip);
             }
 
             if (Type == ItemType.Crystal1)
             {
                 endingManager.potion[0] = true;
                 UseItem(Type);
+                addIngredientSound.PlayOneShot(addIngredientSound.clip);
             }
 
             if (Type == ItemType.Crystal2)
             {
                 endingManager.potion[1] = true;
                 UseItem(Type);
+                addIngredientSound.PlayOneShot(addIngredientSound.clip);
             }
 
             if (Type == ItemType.Crystal3)
             {
                 endingManager.potion[2] = true;
                 UseItem(Type);
+                addIngredientSound.PlayOneShot(addIngredientSound.clip);
             }
 
             if (Type == ItemType.Crystal4)
             {
                 endingManager.potion[3] = true;
                 UseItem(Type);
+                addIngredientSound.PlayOneShot(addIngredientSound.clip);
             }
         }
     }

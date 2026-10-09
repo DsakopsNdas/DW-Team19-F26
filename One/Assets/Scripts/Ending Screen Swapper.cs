@@ -28,7 +28,7 @@ public class EndingScreenSwapper : MonoBehaviour
         }
         else if (endingManager.potion[3])
         {
-            endingLayers[1].SetActive(true);
+            endingLayers[2].SetActive(true);
             endingLayers[3].SetActive(true);
         }
     }

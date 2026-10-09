@@ -18,6 +18,8 @@ public class PuzzleOpen : MonoBehaviour
     public Items itemsManager;
     public bool itemUsed = false;
 
+    public AudioSource audioClip;
+
     public void Start()
     {
         eventSystem = GameObject.FindWithTag("Event System");
@@ -59,6 +61,11 @@ public class PuzzleOpen : MonoBehaviour
 
     public void ChangeRoom()
     {
+        if (audioClip != null)
+        {
+            audioClip.PlayOneShot(audioClip.clip);
+        }
+
         targetPuzzle.SetActive(true);
         parentRoom.SetActive(false);
 

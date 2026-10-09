@@ -12,7 +12,8 @@ public class TileManager : MonoBehaviour
     public RectTransform board;
 
     [SerializeField] List<GameObject> tiles = new List<GameObject>();
-    public AudioSource audioSource;
+    public AudioSource tileMove;
+    public AudioSource cabinetOpen;
     private Vector2 emptySpace;
 
     float size = 150f; // tile size
@@ -80,7 +81,7 @@ public class TileManager : MonoBehaviour
     {
         if (IsNextToEmpty(tile.pos))
         {
-            audioSource.PlayOneShot(audioSource.clip);
+            tileMove.PlayOneShot(tileMove.clip);
             Vector2 oldPos = tile.pos;
             tile.Move(emptySpace);
             emptySpace = oldPos;
@@ -120,7 +121,9 @@ public class TileManager : MonoBehaviour
 
     IEnumerator openCabinet()
     {
-        yield return new WaitForSeconds(1.5f);
+        cabinetOpen.PlayOneShot(cabinetOpen.clip);
+
+        yield return new WaitForSeconds(1f);
 
         cabinetComplete.SetActive(true);
         cabinet.SetActive(false);
